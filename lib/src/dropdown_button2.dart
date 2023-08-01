@@ -333,7 +333,7 @@ class _DropdownMenuState<T> extends State<_DropdownMenu<T>> {
 
   ScrollbarThemeData? get _scrollbarTheme => dropdownStyle.scrollbarTheme;
 
-  bool? get _iOSThumbVisibility => _scrollbarTheme?.thumbVisibility!.resolve(_states);
+  bool? get _iOSThumbVisibility => _scrollbarTheme?.thumbVisibility?.resolve(_states);
 
   Widget get _materialScrollBar => Theme(
         data: Theme.of(context).copyWith(
